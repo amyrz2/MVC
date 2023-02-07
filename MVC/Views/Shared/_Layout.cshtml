@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <!--A webpage title-->
+    <title>@ViewData["Title"]</title>
+
+    <!--An icon for the website-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+
+    <!--Style the site using Bootstrap.-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calc</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer>This is the footer :)</footer>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/grade.js"></script>
+
+
+</body>
+
+</html>
+
